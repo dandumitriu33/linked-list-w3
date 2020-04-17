@@ -1,6 +1,12 @@
 package com.codecool.datastructure;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
+
 public class SinglyLinkedList {
+
+
 
     private class Link {
 
@@ -27,11 +33,39 @@ public class SinglyLinkedList {
     private Link head;
 
     public SinglyLinkedList() {
+
     }
 
-    // Returns the number at 'index'.
+    private List<Integer> numbers = new LinkedList<>();
+
+
+    // Adds a new element to the linked list
+    public int add(int i) {
+        head = new Link(i);
+        return head.getValue();
+    }
+
+    // Returns the number at 'index'./home/dan/codecool/oop/w3/linked-list-w3
     public int access(int index) {
-        return 0;
+        System.out.println("entered access");
+        System.out.println("index is: " + index);
+        ListIterator<Integer> iter = numbers.listIterator();
+        for (int i=0; i<=index; i++) {
+            System.out.println("i counter at: " + i);
+            System.out.println(head.getValue());
+        }
+
+//        for (int counter = 0; counter < index; counter++) {
+//            if (counter==index-1) {
+//                head.next.value = head.getValue();
+//            }
+//            else {
+//                iter.next();
+//                head.next.value = head.getValue();
+//            }
+//        }
+
+        return head.getValue();
     }
 
     // Returns the index of 'number' if it's in the array, otherwise -1;
