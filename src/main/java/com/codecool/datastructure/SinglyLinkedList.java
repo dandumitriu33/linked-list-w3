@@ -35,9 +35,6 @@ public class SinglyLinkedList extends LinkedList {
 
     // Returns the number at 'index'./home/dan/codecool/oop/w3/linked-list-w3
     public int access(int index) {
-//        if (index==0) {
-//            return head.getValue();
-//        }
         Link temp;
         temp = (Link) this.get(index);
 
