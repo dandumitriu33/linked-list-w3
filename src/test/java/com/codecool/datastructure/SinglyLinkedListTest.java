@@ -7,32 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SinglyLinkedListTest {
 
     @Test
-    void testAdd() {
-        SinglyLinkedList ll = new SinglyLinkedList();
-        ll.add(23);
-        ll.add(44);
-        ll.add(15);
-        ll.add(1423);
-
-        assertEquals(23, ll.add(23));
-        assertEquals(44, ll.add(44));
-        assertEquals(15, ll.add(15));
-        assertEquals(1423, ll.add(1423));
-    }
-
-    @Test
-    void testAccess() {
-        SinglyLinkedList ll = new SinglyLinkedList();
-        ll.add(23);
-        ll.add(44);
-        ll.add(15);
-        ll.add(1423);
-
-        assertEquals(23, ll.access(0));
-        assertEquals(44, ll.access(1));
-    }
-
-    @Test
     void testInsert1() {
         SinglyLinkedList ll = new SinglyLinkedList();
 
